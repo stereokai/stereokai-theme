@@ -1,0 +1,24 @@
+$mq-breakpoints: (
+  small:     700px,
+
+  medium:    1024px,
+  medium-b:  1048px,
+  medium-c:  1280px, // not core
+
+  wide:      1444px,
+  wide-b:    1680px, // not core
+
+  superwide: 1924px
+);
+
+// For debugging, enable:
+// $mq-show-breakpoints: map_keys($mq-breakpoints);
+
+$bar-ease-animation: transform .3s .3s linear;
+$tg-gallery-ease-animation: margin-left .3s .3s linear;
+
+$color-blue: #459fed;
+$color-blue-hover: #4eb7f5;
+$color-blue-hover2: #4db4f1;
+$color-white: #ffffff;
+$color-grey: #20303C;

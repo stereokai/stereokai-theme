@@ -1,0 +1,11 @@
+@function width-height-of($map) {
+  @return #{map-get($map, width)} #{map-get($map, height)};
+}
+
+@function first($list) {
+  @return nth($list, 1);
+}
+
+@function last($list) {
+  @return nth($list, length($list));
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Wix-Templates",
+  "title": "Home templates browser - front end",
+  "author": "Tom Alon",
+  "version": "0.0.1",
+  "license": "Proprietary",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/HosseinKarami/fastshell.git"
+  },
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.0",
+    "gulp-header": "^1.2.2",
+    "gulp-jshint": "^1.9.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^2.0.0",
+    "gulp-uglify": "^1.0.1"
+  },
+  "dependencies": {
+    "flexboxgrid": "^6.3.0",
+    "sanitize.css": "^2.0.0"
+  }
+}

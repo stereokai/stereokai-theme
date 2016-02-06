@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  outline: none !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+$base-font-size: 16px;
+body {
+  font: 300 #{$base-font-size}/1 sans-serif;
+  font-weight: 200;
+  background: #362B3B;
+  color: #eee;
+}
+
+//----------------------------------*\
+// COMPONENTS
+//----------------------------------*/
+
+%min-max-app-dimensions {
+  $breakpoints: map_keys($mq-breakpoints);
+  min-width: mq(first($breakpoints));
+}
+
+//----------------------------------*\
+// BASE
+//----------------------------------*/
+
+html {
+  @extend %min-max-app-dimensions;
+}
+
+body, html{
+  min-height: 100vh;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(126, 239, 104, 0);
+  box-shadow: 0;
+  outline: 0 none;
+}
+
+input {
+  margin-left: 70px;
+  transition: all 900ms cubic-bezier(.23, 1, .32, 1);
+  z-index: 10;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+a:link,
+a:focus,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a {
+  color: #000;
+  cursor: pointer;
+}
+
+a[disabled] {
+  cursor: default;
+  pointer-events: none;
+}
+
+label {
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+}
+
+i {
+  margin-right: 5px;
+}
+
+hr {
+  border-color: #999999;
+}
+
+main {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+//----------------------------------*\
+// MISC
+//----------------------------------*/
+
+::selection{
+  background: #333;
+  color: #fff;
+  text-shadow: none;
+}
+::-moz-selection{
+  background: #333;
+  color: #fff;
+  text-shadow: none;
+}
+::-webkit-selection{
+  background: #333;
+  color: #fff;
+  text-shadow: none;
+}
+

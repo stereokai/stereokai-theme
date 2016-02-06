@@ -1,0 +1,51 @@
+@mixin css-toggle-event-handler() {
+  > input[type=checkbox] {
+    display: none;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+
+    &:checked {
+      @content;
+    }
+  }
+}
+
+[unselectable=on] {
+     -moz-user-select: none;
+   -khtml-user-select: none;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@mixin aspect-ratio($width, $height, $with-content: true) {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  @if $with-content == true {
+    > .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+@mixin disabled-link() {
+  cursor: default;
+  pointer-events: none;
+}
+
+@mixin graphics-performance() {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}

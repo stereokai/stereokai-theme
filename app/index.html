@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="-no-js">
+
+<head>
+  <title>Stereokai.com</title>
+  <meta charset="utf-8">
+
+  <!-- META -->
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- END META -->
+
+  <script>
+    (function(H){
+      H.className = '-js';
+      // Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
+      window.isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+      isOpera && H.classList.add('opera');
+      // Firefox 1.0+
+      window.isFirefox = typeof InstallTrigger !== 'undefined';
+      isFirefox && H.classList.add('ff');
+      // At least Safari 3+: "[object HTMLElementConstructor]"
+      window.isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+      isSafari && H.classList.add('safari');
+      // At least IE6
+      window.isIE = !!document.documentMode;
+      isIE && H.classList.add('ie');
+      // Edge
+      window.isEdge = !!window.StyleMedia;
+      isEdge && H.classList.add('edge');
+      // Chrome 1+
+      window.isChrome = !!window.chrome && !!window.chrome.webstore;
+      isChrome && H.classList.add('chrome');
+      // Blink
+      window.isBlink = (isChrome || isOpera) && window.CSS;
+      isBlink && H.classList.add('blink');
+    })(document.documentElement);
+  </script>
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="row">
+  <main class="col-xs-12 wrapper">
+    <aside class="main-menu">
+      <header class="header-left">
+        <div class="logo">
+
+        </div>
+      </header>
+    </aside>
+    <section class="content">
+      <header class="header-left">
+
+      </header>
+    </section>
+  </main>
+  <!-- <script src="assets/js/scripts.js"></script> -->
+</body>
+
+</html>
