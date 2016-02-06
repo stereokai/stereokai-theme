@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "flexboxgrid": "^6.3.0",
-    "sanitize.css": "^2.0.0"
+    "sanitize.css": "^2.0.0",
+    "sassline": "^2.1.0"
   }
 }

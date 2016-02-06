@@ -17,8 +17,15 @@ $mq-breakpoints: (
 $bar-ease-animation: transform .3s .3s linear;
 $tg-gallery-ease-animation: margin-left .3s .3s linear;
 
-$color-blue: #459fed;
-$color-blue-hover: #4eb7f5;
-$color-blue-hover2: #4db4f1;
-$color-white: #ffffff;
-$color-grey: #20303C;
+$monokai: (
+  green:   #a6e22d,
+  cyan:    #66d9ef,
+  magenta: #f92772,
+  orange:  #fd9720,
+  yellow:  #e6db74,
+  violet:  #ae81ff
+);
+
+@function monokai($color) {
+  @return map-get($monokai, $color);
+}

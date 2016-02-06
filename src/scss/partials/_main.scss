@@ -3,8 +3,47 @@
 //----------------------------------*/
 
 header {
-  background: red;
+
+}
+
+.header-left {
+  background: #362B3B;
   height: 160px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.logo {
+  display: flex;
+  height: 45px;
+  padding-left: 3px;
+
+  &:hover {
+    & > svg {
+      fill: #fff;
+    }
+
+    animation: neon1 1.5s ease-in-out 1 alternate forwards;
+  }
+
+  & > svg {
+    transition: all .5s .01s;
+    fill: #eee;
+
+    &:first-child {
+      margin-right: -97px;
+    }
+  }
+
+  &-littleninja {
+    transform: scale(0.05);
+  }
+
+  &-stereokai {
+    transform: scale(0.2);
+  }
 }
 
 body {
@@ -15,18 +54,21 @@ body {
   }
 }
 
-main.wrapper {
+.box {
+  position: relative;
+  min-height: 1rem;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+div.wrapper {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 
   width: 100%;
   max-width: 800px;
-
-  // background: yellow;
-}
-
-.main-menu, .content {
-  // display: flex;
+  padding: 0;
 }
 
 .main-menu {
@@ -36,8 +78,71 @@ main.wrapper {
 
 .content {
   width: calc(100% - 200px);
-  background: rgba(240, 240, 240, 0.05);
+  // background: rgba(240, 240, 240, 0.05);
 }
+
+.nav-item {
+  line-height: 19px;
+  font-size: 12px;
+  text-transform: uppercase;
+  // letter-spacing: 1px;
+  font-family: 'Trade Gothic', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+.nav-list {
+  padding: 30px 25px;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    filter:
+      drop-shadow(0 0 1px  #fff)
+      drop-shadow(0 0 2px  #fff)
+      drop-shadow(0 0 3px  #fff)
+      drop-shadow(0 0 4px  rgba(255, 17, 119, 0.3))
+      drop-shadow(0 0 7px  rgba(255, 17, 119, 0.3))
+      drop-shadow(0 0 10px  rgba(255, 17, 119, 0.3))
+      drop-shadow(0 0 15px rgba(255, 17, 119, 0.1))
+      drop-shadow(0 0 20px rgba(255, 17, 119, 1));
+  }
+  to {
+    filter:
+      drop-shadow(0 0 1px  #fff)
+      drop-shadow(0 0 2px  rgba(255, 255, 255, 0.5))
+      drop-shadow(0 0 3px  rgba(255, 255, 255, 0.5))
+      drop-shadow(0 0 2px  rgba(255, 17, 119, 0.3))
+      drop-shadow(0 0 4px  rgba(255, 17, 119, 0.3))
+      drop-shadow(0 0 6px  rgba(255, 17, 119, 0.3))
+      drop-shadow(0 0 8px  rgba(255, 17, 119, 0.1))
+      drop-shadow(0 0 11px rgba(255, 17, 119, 1));
+  }
+}
+
+@-webkit-keyframes beacon {
+  from {
+    -webkit-filter:
+               drop-shadow(0 0 10px #fff)
+               drop-shadow(0 0 20px  #fff)
+               drop-shadow(0 0 30px  #fff)
+               drop-shadow(0 0 40px  #FF1177)
+               drop-shadow(0 0 70px  #FF1177)
+               drop-shadow(0 0 80px  #FF1177)
+               drop-shadow(0 0 100px #FF1177)
+               drop-shadow(0 0 150px #FF1177);
+  }
+  to {
+    -webkit-filter:
+               drop-shadow(0 0 5px #fff)
+               drop-shadow(0 0 10px #fff)
+               drop-shadow(0 0 15px #fff)
+               drop-shadow(0 0 20px #FF1177)
+               drop-shadow(0 0 35px #FF1177)
+               drop-shadow(0 0 40px #FF1177)
+               drop-shadow(0 0 50px #FF1177)
+               drop-shadow(0 0 75px #FF1177);
+  }
+}
+
 
 //----------------------------------*\
 // MQ: SMALL
