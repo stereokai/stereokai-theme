@@ -47,11 +47,21 @@ header {
 }
 
 body {
-  justify-content: center;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
 
-  &.row {
-    margin: 0;
-  }
+.holygrail {
+  display: flex;
+  flex: 1 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .box {
@@ -81,12 +91,24 @@ div.wrapper {
   // background: rgba(240, 240, 240, 0.05);
 }
 
+
 .nav-item {
   line-height: 19px;
   font-size: 12px;
   text-transform: uppercase;
   // letter-spacing: 1px;
   font-family: 'Trade Gothic', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
+  @each $name, $color in $monokai {
+    &.#{"-"}#{$name} {
+      color: saturate(monokai-dark($name), 15%);
+
+      &:hover {
+        color: $color;
+        // color: lighten(adjust-hue(saturate($color, 20%), -3deg), 10%);
+      }
+    }
+  }
 }
 
 .nav-list {

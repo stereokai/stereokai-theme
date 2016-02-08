@@ -26,6 +26,19 @@ $monokai: (
   violet:  #ae81ff
 );
 
+$monokai-dark: (
+  green:   #859E51,
+  cyan:    #51919E,
+  magenta: #9E516C,
+  orange:  #9E7A51,
+  yellow:  #9E9751,
+  violet:  #6C519E
+);
+
 @function monokai($color) {
   @return map-get($monokai, $color);
+}
+
+@function monokai-dark($color) {
+  @return map-get($monokai-dark, $color);
 }
