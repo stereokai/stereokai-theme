@@ -2,11 +2,10 @@
 // BASE
 //----------------------------------*/
 
-header {
+$ease-in-quint:  cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
 
-}
-
-.header-left {
+%header {
   background: #362B3B;
   height: 160px;
 
@@ -15,21 +14,41 @@ header {
   justify-content: flex-end;
 }
 
+.header-left {
+  @extend %header;
+
+  @media only screen and (max-width: 1024px) {
+    transform: translateX(.5rem);
+    background: #262626;
+  }
+}
+
+.header-right {
+  @extend %header;
+
+  width: calc(200px + 1rem);
+  padding-left: 1rem;
+
+  @media only screen and (min-width: 1025px) {
+    visibility: hidden;
+  }
+}
+
 .logo {
   display: flex;
   height: 45px;
   padding-left: 3px;
 
   &:hover {
-    & > svg {
+    > svg {
       fill: #fff;
     }
 
     animation: neon1 1.5s ease-in-out 1 alternate forwards;
   }
 
-  & > svg {
-    transition: all .5s .01s;
+  > svg {
+    transition: fill .5s .01s;
     fill: #eee;
 
     &:first-child {
@@ -77,26 +96,98 @@ div.wrapper {
   position: relative;
 
   width: 100%;
-  max-width: 800px;
   padding: 0;
+
+  @media only screen and (min-width: 1025px) {
+    max-width: 800px;
+  }
+
+  @include css-toggle-event-handler() {
+    + .main-menu {
+      @media only screen and (max-width: 1024px) {
+        transition-timing-function: $ease-out-quint;
+        transform: translate(0);
+
+        > .menu-toggle {
+          > .nav-item {
+            &:first-child {
+              display: none;
+            }
+
+            &:nth-child(2) {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .main-menu {
+  @media only screen and (max-width: 1024px) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: calc(200px + 1rem);
+    padding-right: 1rem;
+
+    z-index: 10;
+    transform: translate(-100%);
+
+    transition: transform .3s $ease-in-quint;
+  }
+
   width: 200px;
   background: #262626;
 }
 
-.content {
-  width: calc(100% - 200px);
-  // background: rgba(240, 240, 240, 0.05);
+.menu-toggle {
+  @media only screen and (min-width: 1025px) {
+    display: none;
+  }
+
+  position: absolute;
+  z-index: 50;
+  width: 5rem;
+  height: 5rem;
+
+  right: 0;
+  transform: translateX(100%);
+
+  > .nav-item {
+    display: inline-block;
+    transform: rotate(90deg);
+    left: 2rem;
+    background: #262626;
+    height: 2rem;
+    width: 5rem;
+    position: absolute;
+    top: 0;
+    transform-origin: top left;
+    text-align: center;
+
+    &:nth-child(2) {
+      display: none;
+    }
+  }
 }
 
+.content {
+  width: 100%;
+
+  @media only screen and (min-width: 1025px) {
+    width: calc(100% - 200px);
+  }
+}
 
 .nav-item {
   line-height: 19px;
   font-size: 12px;
   text-transform: uppercase;
-  // letter-spacing: 1px;
+  letter-spacing: .02rem;
   font-family: 'Trade Gothic', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 
   @each $name, $color in $monokai {
@@ -165,7 +256,14 @@ div.wrapper {
   }
 }
 
-
+.show-grid {
+  background-image: -webkit-linear-gradient(top, cyan 0, rgba(255,255,255,0) 1px);
+  background-image: -moz-linear-gradient(top, cyan 0, rgba(255,255,255,0) 1px);
+  background-image: -o-linear-gradient(top, cyan 0, rgba(255,255,255,0) 1px);
+  background-image: linear-gradient(to bottom, cyan 0, rgba(255,255,255,0) 1px);
+  background-repeat: repeat-y;
+  background-size: 100% 1rem;
+}
 //----------------------------------*\
 // MQ: SMALL
 //----------------------------------*/

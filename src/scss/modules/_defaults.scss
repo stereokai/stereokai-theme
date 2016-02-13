@@ -12,8 +12,7 @@ html {
 }
 $base-font-size: 16px;
 body {
-  font: 300 #{$base-font-size}/1 "Museo Sans", Helvetica, Arial, sans-serif;
-  // font-weight: 200;
+  // font: 300 #{$base-font-size}/1 "Museo Sans", Helvetica, Arial, sans-serif;
   background: #362B3B;
   color: #eee;
 }
@@ -38,7 +37,6 @@ html {
 body, html{
   width: 100%;
   height: auto;
-  min-width: 1000px;
   min-height: 100vh;
   overflow-x: hidden;
 }

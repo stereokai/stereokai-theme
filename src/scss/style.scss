@@ -15,7 +15,6 @@
 @import 'modules/clearfix';
 @import 'modules/normalize';
 @import 'modules/defaults';
-@import 'modules/typography';
 @import 'mixins/mq';
 
 // Enhancement modules
@@ -26,6 +25,15 @@
 //----------------------------------*/
 
 @import '../../node_modules/flexboxgrid/css/flexboxgrid';
+@import '../../node_modules/sassline/assets/sass/base/reset';
+// @import '../../node_modules/sassline/assets/sass/base/variables';
+@import 'modules/sassline'; // Local version of the above file
+// @import '../../node_modules/sassline/assets/sass/base/modular-scale';
+@import 'modules/modular-scales'; // Local version of the above file
+@import '../../node_modules/sassline/assets/sass/base/mixins';
+// @import '../../node_modules/sassline/assets/sass/base/typography';
+@import 'modules/typography'; // Local version of the above file
+// @import '../../node_modules/sassline/assets/sass/base/layouts';
 
 //----------------------------------*\
 // PARTIALS
