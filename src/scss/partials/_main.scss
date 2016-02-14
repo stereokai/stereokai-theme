@@ -6,12 +6,14 @@ $ease-in-quint:  cubic-bezier(0.755, 0.05, 0.855, 0.06);
 $ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
 
 %header {
-  background: #362B3B;
+  // background: #362B3B;
+  background: #EEECEC;
   height: 160px;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  // visibility: hidden;
 }
 
 .header-left {
@@ -41,7 +43,7 @@ $ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
 
   &:hover {
     > svg {
-      fill: #fff;
+      animation: neon2 .4s ease-in-out 1 alternate forwards;
     }
 
     animation: neon1 1.5s ease-in-out 1 alternate forwards;
@@ -49,7 +51,7 @@ $ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
 
   > svg {
     transition: fill .5s .01s;
-    fill: #eee;
+    fill: #262626 ;
 
     &:first-child {
       margin-right: -97px;
@@ -81,6 +83,10 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+
+  // background-image: url("/assets/img/circle5.svg");
+  // background-size: 120px;
+  // background-repeat: repeat;
 }
 
 .box {
@@ -88,6 +94,10 @@ body {
   min-height: 1rem;
   margin-bottom: 0;
   padding: 1rem;
+}
+
+main.box {
+  padding: 2rem;
 }
 
 div.wrapper {
@@ -209,7 +219,7 @@ div.wrapper {
 @-webkit-keyframes neon1 {
   from {
     filter:
-      drop-shadow(0 0 1px  #fff)
+      drop-shadow(0 0 1px  rgba(255, 17, 119, 0.3))
       drop-shadow(0 0 2px  #fff)
       drop-shadow(0 0 3px  #fff)
       drop-shadow(0 0 4px  rgba(255, 17, 119, 0.3))
@@ -228,6 +238,15 @@ div.wrapper {
       drop-shadow(0 0 6px  rgba(255, 17, 119, 0.3))
       drop-shadow(0 0 8px  rgba(255, 17, 119, 0.1))
       drop-shadow(0 0 11px rgba(255, 17, 119, 1));
+  }
+}
+
+@-webkit-keyframes neon2 {
+  from {
+    fill: rgba(255, 17, 119, 1);
+  }
+  to {
+    fill: #fff;
   }
 }
 
