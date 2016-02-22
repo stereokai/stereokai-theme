@@ -1186,12 +1186,12 @@ body {
   -o-font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
   font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
   line-height: 2rem;
-  margin-bottom: 1.32999rem;
-  padding-top: 0.67001rem; }
+  margin-bottom: 1.34999rem;
+  padding-top: 0.65001rem; }
   @media screen and (min-width: 48.0625em) {
     .typeset p {
-      margin-bottom: 1.35356rem;
-      padding-top: 0.64644rem; } }
+      margin-bottom: 1.37499rem;
+      padding-top: 0.62501rem; } }
 
 .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
   -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
@@ -1203,79 +1203,79 @@ body {
   font-weight: 300; }
 
 .typeset h1, .typeset .alpha {
-  line-height: 3rem;
+  line-height: 4rem;
   font-size: 1.75rem;
-  margin-bottom: 0.02499rem;
-  padding-top: 0.97501rem; }
+  margin-bottom: -0.47588rem;
+  padding-top: 1.47588rem; }
   @media screen and (min-width: 48.0625em) {
     .typeset h1, .typeset .alpha {
       font-size: 3.71429rem;
-      margin-bottom: 0.61428rem;
-      padding-top: 0.38572rem; } }
+      margin-bottom: 0.11242rem;
+      padding-top: 0.88758rem; } }
 
 .typeset h2, .typeset .beta {
   line-height: 3rem;
   font-size: 1.5625rem;
-  margin-bottom: -0.03126rem;
-  padding-top: 1.03126rem; }
+  margin-bottom: -0.03204rem;
+  padding-top: 1.03204rem; }
   @media screen and (min-width: 48.0625em) {
     .typeset h2, .typeset .beta {
       font-size: 2.57143rem;
-      margin-bottom: 0.27142rem;
-      padding-top: 0.72858rem; } }
+      margin-bottom: 0.27013rem;
+      padding-top: 0.72987rem; } }
 
 .typeset h3, .typeset .gamma {
   line-height: 3rem;
   font-size: 1.4rem;
-  margin-bottom: -0.08001rem;
-  padding-top: 1.08001rem; }
+  margin-bottom: -0.08071rem;
+  padding-top: 1.08071rem; }
   @media screen and (min-width: 48.0625em) {
     .typeset h3, .typeset .gamma {
       font-size: 2rem;
-      margin-bottom: 0.09999rem;
-      padding-top: 0.90001rem; } }
+      margin-bottom: 0.09899rem;
+      padding-top: 0.90101rem; } }
 
 .typeset h4, .typeset .delta {
   line-height: 2rem;
   font-size: 1.25rem;
-  margin-bottom: -0.62501rem;
-  padding-top: 0.62501rem; }
+  margin-bottom: -0.62564rem;
+  padding-top: 0.62564rem; }
   @media screen and (min-width: 48.0625em) {
     .typeset h4, .typeset .delta {
       font-size: 1.14286rem;
-      margin-bottom: -0.65715rem;
-      padding-top: 0.65715rem; } }
+      margin-bottom: -0.65772rem;
+      padding-top: 0.65772rem; } }
 
 .typeset h5, .typeset .epsilon {
   line-height: 2rem;
   font-size: 1.11875rem;
-  margin-bottom: -0.66439rem;
-  padding-top: 0.66439rem; }
+  margin-bottom: -0.66494rem;
+  padding-top: 0.66494rem; }
   @media screen and (min-width: 48.0625em) {
     .typeset h5, .typeset .epsilon {
       font-size: 1.14286rem;
-      margin-bottom: -0.65715rem;
-      padding-top: 0.65715rem; } }
+      margin-bottom: -0.65772rem;
+      padding-top: 0.65772rem; } }
 
 .typeset h6, .typeset .zeta {
   line-height: 2rem;
   font-size: 1rem;
-  margin-bottom: -0.70001rem;
-  padding-top: 0.70001rem; }
+  margin-bottom: -0.70051rem;
+  padding-top: 0.70051rem; }
   @media screen and (min-width: 48.0625em) {
     .typeset h6, .typeset .zeta {
       font-size: 1.07143rem;
-      margin-bottom: -0.67858rem;
-      padding-top: 0.67858rem; } }
+      margin-bottom: -0.67912rem;
+      padding-top: 0.67912rem; } }
 
 .typeset ul, .typeset ol {
   line-height: 2rem;
-  margin-bottom: 1.32999rem;
-  padding-top: 0.67001rem; }
+  margin-bottom: 1.34999rem;
+  padding-top: 0.65001rem; }
   @media screen and (min-width: 48.0625em) {
     .typeset ul, .typeset ol {
-      margin-bottom: 1.35356rem;
-      padding-top: 0.64644rem; } }
+      margin-bottom: 1.37499rem;
+      padding-top: 0.62501rem; } }
   .typeset ul li, .typeset ol li {
     -webkit-font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
     -ms-font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
@@ -1306,12 +1306,12 @@ body {
 .typeset .caption {
   color: #BDC8CC;
   line-height: 2rem;
-  margin-bottom: 1.23999rem;
-  padding-top: 0.76001rem; }
+  margin-bottom: 1.23959rem;
+  padding-top: 0.76041rem; }
   @media screen and (min-width: 48.0625em) {
     .typeset .caption {
-      margin-bottom: 1.17249rem;
-      padding-top: 0.82751rem; } }
+      margin-bottom: 1.1722rem;
+      padding-top: 0.8278rem; } }
 
 .typeset h1 + .caption, .typeset .alpha + .caption, .typeset h2 + .caption, .typeset .beta + .caption, .typeset h3 + .caption, .typeset .gamma + .caption {
   margin-top: -1rem; }
@@ -1322,12 +1322,12 @@ body {
 .typeset blockquote p {
   font-style: italic;
   padding-left: 1rem;
-  margin-bottom: 1.65999rem;
-  padding-bottom: 0.67001rem; }
+  margin-bottom: 1.69999rem;
+  padding-bottom: 0.65001rem; }
   @media screen and (min-width: 48.0625em) {
     .typeset blockquote p {
-      margin-bottom: 1.70713rem;
-      padding-bottom: 0.64644rem; } }
+      margin-bottom: 1.74999rem;
+      padding-bottom: 0.62501rem; } }
 
 @media screen and (min-width: 48.0625em) {
   .typeset blockquote {
@@ -1607,3 +1607,29 @@ div.wrapper {
   background-image: linear-gradient(to bottom, cyan 0, rgba(255, 255, 255, 0) 1px);
   background-repeat: repeat-y;
   background-size: 100% 1rem; }
+
+h2.post-date {
+  position: absolute;
+  -webkit-transform: rotate(90deg) translate(0.4rem, -2rem);
+          transform: rotate(90deg) translate(0.4rem, -2rem);
+  left: 100%;
+  width: 300px;
+  top: 0;
+  -webkit-transform-origin: 0;
+          transform-origin: 0;
+  margin: 0;
+  padding: 0;
+  color: #DED5D4; }
+
+.excerpt {
+  position: relative;
+  margin-bottom: 8rem; }
+
+h1:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #000;
+  content: ""; }
